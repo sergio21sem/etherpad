@@ -29,7 +29,11 @@ go to dir terraform
 2. .gitlab-ci.yml help you for automaticly deploy app (nginx + database +app)
 
 оr your can install docker-compose and run:
-```docker-compose up -d```
+```
+docker-machine env etherpad
+eval $(docker-machine env etherpad)
+docker-compose up -d
+```
 
 
 
